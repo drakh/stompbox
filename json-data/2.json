@@ -1,0 +1,30 @@
+{
+  "knobs": [
+    {
+      "name": "drive",
+      "range": 270
+    },
+    {
+      "name": "distortion",
+      "range": 270
+    },
+    {
+      "name": "delay",
+      "range": 270
+    },
+    {
+      "name": "kurvitko",
+      "range": 270
+    }
+  ],
+  "sources":[
+    "audio-data/2/",
+    "audio-data/2/",
+    "audio-data/dry/"
+  ],
+  "presets": [
+    [85, 85, 50, 75],
+    [20, 50, 75, 40],
+    [0,0,0,0]
+  ]
+}

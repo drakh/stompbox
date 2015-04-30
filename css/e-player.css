@@ -1,0 +1,133 @@
+.e-player, .e-player *
+{
+	box-sizing : border-box;
+}
+
+.e-player
+{
+	display       : flex;
+	align-content : flex-start;
+	max-width     : 600px;
+	margin-left   : auto;
+	margin-right  : auto;
+}
+.e-player.hidden
+{
+	display: none;
+}
+.e-col
+{
+	display    : inline-block;
+	text-align : center;
+}
+
+.e-col.e-stylesel
+{
+	flex : 4;
+}
+
+.e-col.e-presetsel
+{
+	flex : auto;
+}
+
+.e-presetsel a, .e-stylesel a
+{
+	display         : block;
+	max-width       : 2em;
+	margin          : auto;
+	cursor          : pointer;
+	margin-bottom   : 2px;
+	text-decoration : none;
+}
+
+.e-presetsel a
+{
+	background-color : #a5a5a5;
+	border           : 1px solid #000;
+}
+
+.e-stylesel a
+{
+	height : 1.5em;
+	width  : 100%;
+}
+
+.e-col.e-knobs
+{
+	flex : 4;
+}
+
+.e-knobs ul, .e-stylesel ul
+{
+	display       : flex;
+	align-content : flex-start;
+	flex-flow     : row wrap;
+}
+
+.e-stylesel ul li
+{
+	flex : 1;
+}
+
+.e-stylesel ul li.e-style-1 a
+{
+	background-color : #ff2930;
+}
+
+.e-stylesel ul li.e-style-2 a
+{
+	background-color : #ff353c;
+}
+
+.e-stylesel ul li.e-style-3 a
+{
+	background-color : #f7941e;
+}
+
+.e-stylesel ul li.e-style-4 a
+{
+	background-color : #0f0;
+}
+
+.e-knobs ul li
+{
+	width : 50%;
+}
+.e-knobs ul li i.hidden
+{
+	display: none;
+}
+.e-presetsel a.e-sel, .e-stylesel li.e-style-1 a.e-sel, .e-stylesel li.e-style-2 a.e-sel, .e-stylesel li.e-style-3 a.e-sel, .e-stylesel li.e-style-4 a.e-sel
+{
+	background-color : #000;
+	color            : #fafafa;
+	border           : 1px solid #ff2930;
+}
+
+.e-col.e-knobs i
+{
+	display   : block;
+	width     : 100px;
+	height    : 100px;
+	font-size : 100px;
+	transform : rotate(0deg);
+	color     : #a5a5a5;
+}
+
+a.e-mute
+{
+	display          : block;
+	margin           : auto;
+	width            : 80px;
+	height           : 50px;
+	background-color : #a5a5a5;
+	color            : #fff;
+	font-size        : 50px;
+	cursor           : pointer;
+}
+
+a.e-mute.e-muted
+{
+	color : #afafaf;
+}

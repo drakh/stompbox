@@ -1,0 +1,26 @@
+{
+  "knobs": [
+    {
+      "name": "drive",
+      "range": 270
+    },
+    {
+      "name": "distortion",
+      "range": 270
+    },
+    {
+      "name": "delay",
+      "range": 270
+    }
+  ],
+  "sources":[
+    "audio-data/1/",
+    "audio-data/1/",
+    "audio-data/dry/"
+  ],
+  "presets": [
+    [10, 10, 20],
+    [20, 40, 30],
+    [0,0,0]
+  ]
+}
